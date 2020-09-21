@@ -1,2 +1,0 @@
-# TrabalhoPratico1
-Grafos
