@@ -1,14 +1,17 @@
 class Grafo(object):
 
     def __init__(self, grafo_dicionario=None):
+        #initializa um objeto grafo na forma de dicionário
         if grafo_dicionario == None:
             grafo_dicionario = {}
         self.__grafo_dicionario = grafo_dicionario
 
     def vertices(self):
+        #retorna os vertices
         return list(self.__grafo_dicionario.keys())
 
     def arestas(self):
+        #retorna as arestas
         return self.__gerar_arestas()
 
     def adicionar_vertice(self, vertice):
@@ -32,6 +35,7 @@ class Grafo(object):
         return arestas
 
     def __str__(self):
+        #retorna o grafo completo
         res = "vértices: "
         for k in self.__grafo_dicionario:
             res += str(k) + " "
